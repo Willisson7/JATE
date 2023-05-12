@@ -18,11 +18,7 @@ export const putDb = async (content) => {
   const tx = db.transaction('jate', 'readwrite');
   const store = tx.objectStore('jate');
   await store.put({ id: 1,  value: content});
-  // if (error){
-  // console.error('putDb not implemented');
-  // } else {
-  //   console.log('Content added to the database:', content);
-  // };
+
 };
 
 //  Added logic for a method that gets all the content from the database
